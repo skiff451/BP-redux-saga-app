@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { fetchSearchFilms } from "../../redux/actionCreators";
+import { getSearchFilms } from "../../redux/actionCreators";
 
 const SearchInput = (): JSX.Element => {
   const [value, setValue] = useState("");
@@ -21,7 +21,7 @@ const SearchInput = (): JSX.Element => {
       <button
         className=""
         onClick={() => {
-          dispatch(fetchSearchFilms(value));
+          dispatch(getSearchFilms(value));
         }}
       >
         search

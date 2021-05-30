@@ -6,9 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prettier": " prettier --write ./redux/** ./components/** ./pages/**/*.tsx",
-    "lint": "eslint  ./redux/**  ./components/** ./pages/** -c .eslintrc.json --ext ts,tsx",
-    "lint:write": "eslint ./redux/** ./components/** ./pages/** -c .eslintrc.json --fix --ext ts,tsx",
+    "prettier": " prettier --write ./api/** ./redux/** ./components/** ./pages/**/*.tsx",
+    "lint": "eslint  ./api/** ./redux/**  ./components/** ./pages/** -c .eslintrc.json --ext ts,tsx",
+    "lint:write": "eslint ./api/** ./redux/** ./components/** ./pages/** -c .eslintrc.json --fix --ext ts,tsx",
     "prepare": "husky install"
   },
   "dependencies": {

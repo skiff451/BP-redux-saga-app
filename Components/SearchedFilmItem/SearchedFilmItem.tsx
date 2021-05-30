@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useDispatch } from "react-redux";
-import { fetchFilmInfo } from "../../redux/actionCreators";
+import { getFilmInfo } from "../../redux/actionCreators";
 
 import styles from "./Item.module.scss";
 
@@ -10,7 +10,7 @@ const SearchedFilmItem = ({ title, image, id }: FilmSearchItem): JSX.Element => 
     <div
       className={styles.item}
       onClick={() => {
-        dispatch(fetchFilmInfo(id));
+        dispatch(getFilmInfo(id));
       }}
     >
       <Image src={image} width={100} height={150} />

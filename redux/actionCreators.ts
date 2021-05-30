@@ -1,6 +1,6 @@
-import * as actions from "./actionTypes";
+import actions from "./actions";
 
-export function fetchSearchFilms(url: string): IFetchAction {
+export function getSearchFilms(url: string): IFetchAction {
   return {
     type: actions.FETCH_SEARCHED_FILMS,
     payload: {
@@ -18,7 +18,7 @@ export function addSearchedFilmsData(data: IFilmsSearchData): IAddAction {
   };
 }
 
-export function fetchFilmInfo(id: string): IFetchFullInfoAction {
+export function getFilmInfo(id: string): IFetchFullInfoAction {
   return {
     type: actions.FETCH_FILM_DATA,
     payload: {
